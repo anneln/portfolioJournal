@@ -1,5 +1,105 @@
-html, 
+html,
 body {
-    margin: 0;
-    padding: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+/*navigation*/
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logoAhb {
+  width: 50px;
+}
+
+.title-nav {
+  text-transform: capitalize;
+  color: #0e0e0e;
+  font-weight: 500;
+  letter-spacing: -0.601px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #090909;
+  font-weight: 600;
+}
+.nav-links li {
+  border-bottom: 1px solid #090909;
+  width: 45%;
+}
+
+#hamburger {
+  display: none;
+}
+
+.hero {
+  background-image: url("/images/blog-image-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  margin-top: 3.5rem;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #202020;
+  margin-top: 0;
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+/*media queries*/
+@media (min-width: 481px) {
+  .logo-div {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    gap: 1rem;
+    display: flex;
+  }
+  .nav-links li {
+    border-bottom: none;
+    width: auto;
+  }
+  .hero {
+    height: 30rem;
+  }
+  h1 {
+    padding-top: 15rem;
+  }
 }
