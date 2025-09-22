@@ -1,7 +1,5 @@
 # Web portfolio
 
-This solo project
-
 This solo project is a portfolio presented as a collection of articles.
 It is structured across several pages.
 The homepage introduces the site and provides quick access to featured projects.
