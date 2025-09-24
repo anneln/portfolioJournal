@@ -16,40 +16,39 @@ const postsArray = [
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
   {
-    name: "Blog One",
-    image: "/images/desk-pc.png",
+    name: "Blog three",
+    image: "/images/image-05.png",
     id: 2,
     date: "July 23, 2022",
-    title: "Blog One",
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
   {
-    name: "Blog three",
-    image: "/images/desk-pc.png",
+    name: "Blog four",
+    image: "/images/image-hero.png",
     id: 3,
     date: "July 23, 2022",
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
   {
-    name: "Blog faur",
-    image: "/images/desk-pc.png",
+    name: "Blog five",
+    image: "/images/design-laptop.png",
     id: 4,
     date: "July 23, 2022",
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
   {
-    name: "Blog five",
-    image: "/images/desk-pc.png",
+    name: "Blog six",
+    image: "/images/learn-react.png",
     id: 5,
     date: "July 23, 2022",
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
   {
-    name: "Blog six",
+    name: "Blog seven",
     image: "/images/desk-pc.png",
     id: 6,
     date: "July 23, 2022",
@@ -57,7 +56,7 @@ const postsArray = [
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
   {
-    name: "Blog seven",
+    name: "Blog eight",
     image: "/images/desk-pc.png",
     id: 7,
     date: "July 23, 2022",
