@@ -1,7 +1,7 @@
 const postsArray = [
   {
     name: "Blog One",
-    image: "/images/desk-pc.png",
+    image: "./images/blog-desk-pc.png",
     id: 0,
     date: "July 23, 2022",
     description:
@@ -9,7 +9,7 @@ const postsArray = [
   },
   {
     name: "Blog two",
-    image: "/images/image-04.png",
+    image: "./images/blog-image-04.png",
     id: 1,
     date: "July 23, 2022",
     description:
@@ -17,7 +17,7 @@ const postsArray = [
   },
   {
     name: "Blog three",
-    image: "/images/image-05.png",
+    image: "./images/blog-image-05.png",
     id: 2,
     date: "July 23, 2022",
     description:
@@ -25,7 +25,7 @@ const postsArray = [
   },
   {
     name: "Blog four",
-    image: "/images/image-hero.png",
+    image: "./images/blog-image-hero.png",
     id: 3,
     date: "July 23, 2022",
     description:
@@ -33,7 +33,7 @@ const postsArray = [
   },
   {
     name: "Blog five",
-    image: "/images/design-laptop.png",
+    image: "./images/design-laptop.png",
     id: 4,
     date: "July 23, 2022",
     description:
@@ -41,7 +41,7 @@ const postsArray = [
   },
   {
     name: "Blog six",
-    image: "/images/learn-react.png",
+    image: "./images/learn-react.png",
     id: 5,
     date: "July 23, 2022",
     description:
@@ -49,7 +49,7 @@ const postsArray = [
   },
   {
     name: "Blog seven",
-    image: "/images/desk-pc.png",
+    image: "./images/blog-desk-pc.png",
     id: 6,
     date: "July 23, 2022",
     description:
@@ -57,7 +57,7 @@ const postsArray = [
   },
   {
     name: "Blog eight",
-    image: "/images/desk-pc.png",
+    image: "./images/blog-desk-pc.png",
     id: 7,
     date: "July 23, 2022",
     description:
