@@ -19,7 +19,8 @@ function displayArticles() {
                   ${article.description}
                 </p>
               </div>
-            </article>`;
+            </article>
+            `;
     })
     .join(" ");
 }
