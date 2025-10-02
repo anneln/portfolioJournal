@@ -1,8 +1,10 @@
 import postsArray from "./data.js";
 
 let realisationsInHtml = [];
+let limit = 0;
 
 function displayArticles() {
+  const articesToShow = limit ? postsArray.slice(0, limit) : postsArray;
   return postsArray
     .map(function (article) {
       console.log(postsArray);
@@ -27,4 +29,5 @@ function displayArticles() {
 
 realisationsInHtml = displayArticles();
 document.getElementById("posts-list").innerHTML = realisationsInHtml;
+const moreBtn = document.getElementsById("more-btn");
 console.log(realisationsInHtml);

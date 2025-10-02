@@ -97,6 +97,10 @@ h1 {
   background-color: #fff;
 }
 
+.btn:hover {
+  text-transform: uppercase;
+}
+
 .grid-container-after {
   display: none;
 }
