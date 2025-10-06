@@ -117,6 +117,16 @@ footer {
   padding: 1rem;
 }
 
+/*ABOUT ME*/
+#ahb-img {
+  border-radius: 50%;
+}
+
+.me {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*media queries*/
 @media (min-width: 480px) {
   .logo-div {
