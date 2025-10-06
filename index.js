@@ -16,7 +16,7 @@ function displayArticles(start, end) {
                 <span class="post-date">${article.date}</span>
                 <h2 class="post-title">${article.name}</h2>
                 <p class="post-paragraphe">
-                  ${article.description}
+                  ${article.description.substring(0, 150)}
                 </p>
               </div>
             </article>
