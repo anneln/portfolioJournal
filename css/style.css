@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
+  color: #151515;
 }
 
 .container {
@@ -34,6 +35,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+  border-bottom: 1px dotted #3db770;
 }
 
 .nav-links {
@@ -120,11 +122,35 @@ footer {
 /*ABOUT ME*/
 #ahb-img {
   border-radius: 50%;
+  width: 9rem;
 }
 
 .me {
-  display: flex;
-  justify-content: space-around;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.my-presentation h2 {
+  font-size: 2.17rem;
+  font-weight: 700;
+  letter-spacing: -1.08px;
+}
+
+.about h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.recent-posts-list {
+  text-align: center;
+  color: #141414;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.about {
+  padding: 2.5rem;
 }
 
 /*media queries*/
@@ -152,11 +178,45 @@ footer {
   h1 {
     padding-top: 15rem;
   }
-  /*articles*/
+  /*about me*/
+  .me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .my-presentation {
+    text-align: left;
+  }
+
+  .my-presentation h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -1.08px;
+  }
+
+  .about h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .recent-posts-list {
+    text-align: center;
+    color: #141414;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .about {
+    padding: 2.5rem;
+  }
 }
 
 @media (min-width: 760px) {
   #posts-list {
     margin: 2rem;
+  }
+  .me {
+    gap: 0.5rem;
+    justify-content: flex-start;
   }
 }
