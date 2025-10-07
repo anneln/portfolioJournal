@@ -46,24 +46,26 @@ moreBtn.addEventListener("click", function (e) {
   moreBtn.style.display = "none";
 });
 
-const app = document.getElementById("app");
+const art = document.getElementById("art");
 
 const params = new URLSearchParams(window.location.search);
 const articleId = params.get("id");
 const article = postsArray.find((post) => post.id == articleId);
 
 if (article) {
-  app.innerHTML = `
-    <main>
-      <article class="post">
-        <img src="${article.image}" alt="${article.name}" class="blog-img" />
-        <div class="post-description">
-          <span class="post-date">${article.date}</span>
-          <h2 class="post-title">${article.name}</h2>
-          <p class="post-paragraphe">${article.description}</p>
-        </div>
-      </article>
-    </main>
+  art.innerHTML = `
+    <article class="solo-post" >
+      <h2 class="article-title">${article.name}</h2>
+      <p class="pitch">${article.subtitle}</p>
+      <img src="${article.image}" alt="${article.name}" class="article-img" />
+      <div class="article-description">
+        <span class="article-date">${article.date}</span>  
+        <p class="article-paragraphe">${article.description}</p>
+      </div>
+      <div> 
+        <a class="article-link" target="_blank" href=${article.link}>View project</a>
+      </div>
+    </article>
   `;
 } else {
   app.innerHTML = `<p>Article introuvable.</p>`;

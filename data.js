@@ -2,10 +2,11 @@ const postsArray = [
   {
     name: "Twimba",
     image: "./images/blog-desk-pc.png",
+    subtitle: "This is a solo project to clone twitter and Scrimba.",
     id: 0,
     date: "August 05, 2025",
     description:
-      "This is a solo project to clone twitter and Scrimba. <br> What the app shoud do ? Render tweet from some pre-prepared data Add new tweets Each tweet will be likable and unlikableUsers can reply to a tweet technical requirements use data attributes Use CDN for add icons Use CDN for generate UUiDs Deploy the project using Netlify and Github View this project on https://twimbanneln.netlify.app/",
+      "The app shoud render tweet from some pre-prepared data and add new tweets.<br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br><strong> Technical requirements :</strong> use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
     link: "https://twimbanneln.netlify.app/",
     page: "twimba.html",
   },
