@@ -7,7 +7,7 @@ function displayArticles(start, end) {
     .slice(start, end)
     .map(function (article) {
       return `
-            <article class="post">
+            <article class="post" id="post-article">
               <img
                 src="${article.image}"
                 class="blog-img"
@@ -34,4 +34,9 @@ moreBtn.addEventListener("click", function (e) {
   const remainingArticles = displayArticles(3, postsArray.length);
   postList.innerHTML += remainingArticles;
   moreBtn.style.display = "none";
+});
+
+const postArticle = document.getElementById("post-article");
+postArticle.addEventListener("click", function (e) {
+  return postsArray.filter();
 });

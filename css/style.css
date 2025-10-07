@@ -150,7 +150,18 @@ footer {
 }
 
 .about {
-  padding: 2.5rem;
+  padding: 1.5rem;
+}
+
+/*ARTICLE*/
+
+#post-article {
+  cursor: pointer;
+  padding: 1.2rem;
+}
+
+#post-article:hover {
+  background-color: rgba(229, 239, 228, 0.8);
 }
 
 /*media queries*/
