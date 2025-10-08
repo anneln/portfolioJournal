@@ -42,3 +42,23 @@ moreBtn.addEventListener("click", function (e) {
   postList.innerHTML += remainingArticles;
   moreBtn.style.display = "none";
 });
+
+const art = document.getElementById("art");
+const url = new URL(window.location.href);
+const articleId = url.searchParams.get("id");
+const article = postsArray.find((post) => post.id == articleId);
+
+art.innerHTML = `
+    <article class="solo-post" >
+      <h2 class="article-title">${article.name}</h2>
+      <p class="pitch">${article.subtitle}</p>
+      <img src="${article.image}" alt="${article.name}" class="article-img" />
+      <div class="article-description">
+        <span class="article-date">${article.date}</span>  
+        <p class="article-paragraphe">${article.description}</p>
+      </div>
+      <div> 
+        <a class="article-link" target="_blank" href=${article.link}>View project</a>
+      </div>
+    </article>
+  `;
