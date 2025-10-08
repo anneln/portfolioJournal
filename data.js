@@ -6,19 +6,21 @@ const postsArray = [
     id: 0,
     date: "August 05, 2025",
     description:
-      "The app shoud render tweet from some pre-prepared data and add new tweets.<br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br><strong> Technical requirements :</strong> use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
+      "The app shoud render tweet from some pre-prepared data and add new tweets.</br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br><strong>Technical requirements :</strong> use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
     link: "https://twimbanneln.netlify.app/",
-    page: "twimba.html",
+    page: "article.html",
   },
   {
-    name: "Blog two",
-    image: "./images/blog-image-04.png",
+    name: "Mobile Ordering App",
+    image: "./images/orderfood.jpg",
+    subtitle:
+      "This is a solo project to create a mobile restaurant ordering application.",
     id: 1,
-    date: "July 23, 2022",
+    date: "September 11, 2025",
     description:
-      "I'm excited to start a new learning journey as a Scrimba Bootcamp student! ",
-    link: "#",
-    page: "blog2.html",
+      "The app shoud display menu, render an order section, display a payment modal and finally show a confirmation message.<br> <strong> Technical requirements :</strong> Follow design spec on Figma | Render the menu option using Javascript | Be able to add and remove items | Have a payment modal with compulsory form inputs | Deploying with Netlify and Github desktop",
+    link: "https://mobilerestorderingapp.netlify.app",
+    page: "article.html",
   },
   {
     name: "Blog three",

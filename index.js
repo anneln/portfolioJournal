@@ -1,7 +1,11 @@
 import postsArray from "./data.js";
 
+const sortedPosts = [...postsArray].sort(
+  (a, b) => new Date(b.date) - new Date(a.date)
+);
+
 function displayArticles(start, end) {
-  return postsArray
+  return sortedPosts
     .slice(start, end)
     .map(function (article) {
       return `
@@ -14,7 +18,7 @@ function displayArticles(start, end) {
                 <span class="post-date">${article.date}</span>
                 <h2 class="post-title">${article.name}</h2>
                 <p class="post-paragraphe">
-                  ${article.description.substring(0, 150)}
+                  ${article.description.substring(0, 130)}...
                 </p>
               </div>
             </article>

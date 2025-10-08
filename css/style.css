@@ -177,6 +177,8 @@ footer {
 
 .article-img {
   margin: 0.8rem auto;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .article-link {
