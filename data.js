@@ -6,7 +6,7 @@ const postsArray = [
     id: 0,
     date: "August 05, 2025",
     description:
-      "The app shoud render tweet from some pre-prepared data and add new tweets.</br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br><strong>Technical requirements :</strong> use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
+      "The app shoud render tweet from some pre-prepared data and add new tweets.</br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br> <strong>Technical requirements :</strong> use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
     link: "https://twimbanneln.netlify.app/",
     page: "article.html",
   },
@@ -30,7 +30,7 @@ const postsArray = [
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! ",
     link: "#",
-    page: "blog3.html",
+    page: "article.html",
   },
   {
     name: "Blog four",
@@ -40,7 +40,7 @@ const postsArray = [
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! ",
     link: "#",
-    page: "blog4.html",
+    page: "article.html",
   },
   {
     name: "Blog five",
@@ -50,7 +50,7 @@ const postsArray = [
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! ",
     link: "#",
-    page: "blog5.html",
+    page: "article.html",
   },
   {
     name: "Blog six",
@@ -60,7 +60,7 @@ const postsArray = [
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! ",
     link: "#",
-    page: "blog6.html",
+    page: "article.html",
   },
   {
     name: "Blog seven",
@@ -70,7 +70,7 @@ const postsArray = [
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! ",
     link: "#",
-    page: "blog7.html",
+    page: "article.html",
   },
   {
     name: "Blog eight",
@@ -80,7 +80,7 @@ const postsArray = [
     description:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! ",
     link: "#",
-    page: "blog8.html",
+    page: "article.html",
   },
 ];
 export default postsArray;
