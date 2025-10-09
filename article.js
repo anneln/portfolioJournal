@@ -52,13 +52,19 @@ art.innerHTML = `
     <article class="solo-post" >
       <h2 class="article-title">${article.name}</h2>
       <p class="pitch">${article.subtitle}</p>
-      <img src="${article.image}" alt="${article.name}" class="article-img" />
+      <img class="article-img" src="${article.image}" alt="${article.name}"  />
       <div class="article-description">
         <span class="article-date">${article.date}</span>  
-        <p class="article-paragraphe">${article.description}</p>
+        <p class="article-paragraph">${article.description}</p>
       </div>
       <div> 
         <a class="article-link" target="_blank" href=${article.link}>View project</a>
       </div>
     </article>
   `;
+
+window.addEventListener("load", () => {
+  const copyright = document.getElementById("copyright");
+  copyright.innerHTML = new Date().getFullYear();
+  toString();
+});

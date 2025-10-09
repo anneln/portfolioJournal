@@ -6,7 +6,7 @@ const postsArray = [
     id: 0,
     date: "August 05, 2025",
     description:
-      "The app shoud render tweet from some pre-prepared data and add new tweets.</br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br> <strong>Technical requirements :</strong> use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
+      "The app shoud render tweet from some pre-prepared data and add new tweets.</br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br> Technical requirements : use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
     link: "https://twimbanneln.netlify.app/",
     page: "article.html",
   },
@@ -18,7 +18,7 @@ const postsArray = [
     id: 1,
     date: "September 11, 2025",
     description:
-      "The app shoud display menu, render an order section, display a payment modal and finally show a confirmation message.<br> <strong> Technical requirements :</strong> Follow design spec on Figma | Render the menu option using Javascript | Be able to add and remove items | Have a payment modal with compulsory form inputs | Deploying with Netlify and Github desktop",
+      "The app shoud display menu, render an order section, display a payment modal and finally show a confirmation message.<br>Technical requirements : Follow design spec on Figma | Render the menu option using Javascript | Be able to add and remove items | Have a payment modal with compulsory form inputs | Deploying with Netlify and Github desktop",
     link: "https://mobilerestorderingapp.netlify.app",
     page: "article.html",
   },

@@ -39,43 +39,45 @@
         </nav>
       </header>
       <main>
-        <div class="me">
-          <img
-            id="ahb-img"
-            src="images/ahb.jpeg"
-            alt="photo Anne-Hélène Bricet"
-          />
-          <div class="my-presentation">
-            <h2>Hi, My name is Anne-Hélène, I'm a front-end developer !</h2>
+        <section class="who">
+          <div class="me">
+            <img
+              id="ahb-img"
+              src="images/ahb.jpeg"
+              alt="photo Anne-Hélène Bricet"
+            />
+            <div class="my-presentation">
+              <h2>Hi, My name is Anne-Hélène, I'm a front-end developer !</h2>
+              <p>
+                Welcome to My Portfolio Journal : explore my works throught
+                theses articles.
+              </p>
+            </div>
+          </div>
+          <div class="about">
+            <h4>Why did I start codding ?</h4>
             <p>
-              Welcome to My Portfolio Journal : explore my works throught theses
-              articles.
+              After many years in marketing with a strong focus on customer
+              satisfaction, I changed my career direction in 2014.<br />
+              I completed <em>Le Wagon's intensive bootcamp</em> in Paris to
+              become a Full-stack Ruby Developer. This experience launched my
+              journey into web development.
+            </p>
+            <h4>How do I keep my knowledge up to date ?</h4>
+            <p>
+              Until 2023, I worked for a digital communication agency that built
+              websites with various CMS. Even if I customized them with code, it
+              wasn't enough to stay updated on various languages. <br />Since
+              then, to maintain my knowledge while working as a freelance, I
+              watched online tutorials, followed courses on different platforms
+              and practiced coding with <em>Exercism</em> or similar tools.
+              <br />I enrolled in <em>Scrimba's Front End Career Path</em> to
+              improve my coding in HTML5, CSS3, modern JavaScript
+              (ES6+),responsive design, best practices, accessibility and learn
+              React.
             </p>
           </div>
-        </div>
-        <div class="about">
-          <h4>Why did I start codding ?</h4>
-          <p>
-            After many years in marketing with a strong focus on customer
-            satisfaction, I changed my career direction in 2014.<br />
-            I completed <em>Le Wagon's intensive bootcamp</em> in Paris to
-            become a Full-stack Ruby Developer. This experience launched my
-            journey into web development.
-          </p>
-          <h4>How do I keep my knowledge up to date ?</h4>
-          <p>
-            Until 2023, I worked for a digital communication agency that built
-            websites with various CMS. Even if I customized them with code, it
-            wasn't enough to stay updated on various languages. <br />Since
-            then, to maintain my knowledge while working as a freelance, I
-            watched online tutorials, followed courses on different platforms
-            and practiced coding with <em>Exercism</em> or similar tools.
-            <br />I enrolled in <em>Scrimba's Front End Career Path</em> to
-            improve my coding in HTML5, CSS3, modern JavaScript
-            (ES6+),responsive design, best practices, accessibility and learn
-            React.
-          </p>
-        </div>
+        </section>
         <div class="grid-container">
           <h4 class="recent-posts-list">Recents Posts</h4>
           <section id="posts-list">
@@ -88,9 +90,11 @@
         </div>
       </main>
       <footer>
-        <p class="copyright">
-          <!--put js copyright here-->
-          Copyright &copy 2025
+        <p>
+          Copyright &copy
+          <span id="copyright">
+            <!--Js copyright-->
+          </span>
         </p>
       </footer>
     </div>

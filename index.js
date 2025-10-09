@@ -1,7 +1,7 @@
 import postsArray from "./data.js";
 
 const sortedPosts = [...postsArray].sort(
-  (a, b) => new Date(b.date) - new Date(a.date)
+  (a, z) => new Date(z.date) - new Date(a.date)
 );
 
 function displayArticles(start, end) {
@@ -45,4 +45,10 @@ moreBtn.addEventListener("click", function (e) {
   const remainingArticles = displayArticles(3, postsArray.length);
   postList.innerHTML += remainingArticles;
   moreBtn.style.display = "none";
+});
+
+window.addEventListener("load", () => {
+  const copyright = document.getElementById("copyright");
+  copyright.innerHTML = new Date().getFullYear();
+  toString();
 });
