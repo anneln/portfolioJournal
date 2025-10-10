@@ -262,8 +262,7 @@ footer {
   }
 
   /*about me*/
-  .who {
-  }
+
   .me {
     display: flex;
     justify-content: space-around;
