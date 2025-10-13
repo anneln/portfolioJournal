@@ -1,7 +1,7 @@
 const postsArray = [
   {
     name: "Twimba",
-    image: "./images/twimba.jpg",
+    image: "/images/twimba.jpg",
     subtitle: "This is a solo project to clone twitter and Scrimba.",
     id: 0,
     date: "August 05, 2025",
@@ -12,7 +12,7 @@ const postsArray = [
   },
   {
     name: "Mobile Ordering App",
-    image: "./images/orderfood.jpg",
+    image: "/images/orderfood.jpg",
     subtitle:
       "This is a solo project to create a mobile restaurant ordering application.",
     id: 1,
@@ -24,7 +24,7 @@ const postsArray = [
   },
   {
     name: "Pass Generator",
-    image: "./images/pass.jpg",
+    image: "/images/pass.jpg",
     subtitle: "It's a solo project to generate random secured passwords",
     id: 2,
     date: "August 12, 2022",
@@ -79,13 +79,13 @@ const postsArray = [
   },
   {
     name: "Portfolio Journal",
-    image: "./images/portfolio.jpg",
+    image: "/images/portfolio.jpg",
     subtitle: "Do a responsive blog for a solo project",
     id: 6,
     date: "October 13, 2025",
     description:
       "Developing a responsive portfolio blog with a mobile-first design approach.",
-    link: "",
+    link: "https://portfolio-anne-helene.netlify.app/",
     page: "article.html",
   },
 ];
