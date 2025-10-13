@@ -12,7 +12,7 @@ const postsArray = [
   },
   {
     name: "Mobile Ordering App",
-    image: "../images/orderfood.jpg",
+    image: "orderfood.jpg",
     subtitle:
       "This is a solo project to create a mobile restaurant ordering application.",
     id: 1,
