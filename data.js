@@ -1,7 +1,7 @@
 const postsArray = [
   {
     name: "Twimba",
-    image: "/images/twimba.jpg",
+    image: "images/twimba.jpg",
     subtitle: "This is a solo project to clone twitter and Scrimba.",
     id: 0,
     date: "August 05, 2025",
@@ -12,7 +12,7 @@ const postsArray = [
   },
   {
     name: "Mobile Ordering App",
-    image: "/images/orderfood.jpg",
+    image: "../images/orderfood.jpg",
     subtitle:
       "This is a solo project to create a mobile restaurant ordering application.",
     id: 1,
