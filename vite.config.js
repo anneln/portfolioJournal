@@ -6,7 +6,6 @@ export default defineConfig({
       targets: [
         {
           src: "images", // ton dossier racine "images"
-          dest: ".", // copie dans dist/images
         },
       ],
     }),
