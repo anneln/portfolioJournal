@@ -1,7 +1,7 @@
 const postsArray = [
   {
     name: "Twimba",
-    image: "images/twimba.jpg",
+    image: "/images/twimba.jpg",
     subtitle: "This is a solo project to clone twitter and Scrimba.",
     id: 0,
     date: "August 05, 2025",
@@ -12,7 +12,7 @@ const postsArray = [
   },
   {
     name: "Mobile Ordering App",
-    image: "orderfood.jpg",
+    image: "/images/orderfood.jpg",
     subtitle:
       "This is a solo project to create a mobile restaurant ordering application.",
     id: 1,
@@ -35,7 +35,7 @@ const postsArray = [
   },
   {
     name: "Color Scheme Generator",
-    image: "./images/colorScheme.jpg",
+    image: "/images/colorScheme.jpg",
     subtitle: "Generate color palettes from a base color",
     id: 3,
     date: "September 22, 2022",
@@ -46,18 +46,18 @@ const postsArray = [
   },
   {
     name: "Mobile Leads Tracker 📱",
-    image: "./images/leadstrack.jpg",
+    image: "/images/leadstrack.jpg",
     subtitle: "Build a mobile app",
     id: 4,
     date: "May 6, 2025",
     description:
       "This mobile app is useful to save favorite links <br> To built it I used Firebase and web application manifest to install app on mobile screen then I deploy it on Netlify ",
-    link: "#",
+    link: "https://leads-tracker-ahb.netlify.app/",
     page: "article.html",
   },
   {
     name: "War game",
-    image: "./images/wargame.jpg",
+    image: "/images/wargame.jpg",
     subtitle: "Build a war game",
     id: 5,
     date: "September 28, 2022",
@@ -68,7 +68,7 @@ const postsArray = [
   },
   {
     name: "Meme Generator",
-    image: "./images/meme.jpg",
+    image: "/images/meme.jpg",
     subtitle: "Do a meme generator",
     id: 6,
     date: "November 25, 2022",
