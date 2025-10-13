@@ -12,6 +12,6 @@ The “About Me” page offers a personal introduction.
 - [x] Follow a Figma design
 - [x] Use mobile first 💜
 - [x] Responsive design (media queries, relatives units, viewport meta tag) 🚀
-- [x] Deploy on Gihub and Netlify
+- [x] Deploy on Github and Netlify
 
 🎉
