@@ -1,9 +1,16 @@
+const twimbaimg = new URL("./images/twimba.jpg", import.meta.url).href;
 const orderimg = new URL("./images/orderfood.jpg", import.meta.url).href;
+const passimg = new URL("./images/pass.jpg", import.meta.url).href;
+const schemeimg = new URL("./images/colorScheme.jpg", import.meta.url).href;
+const leadsimg = new URL("./images/leadstrack.jpg", import.meta.url).href;
+const wargameimg = new URL("./images/wargame.jpg", import.meta.url).href;
+const memeimg = new URL("./images/meme.jpg", import.meta.url).href;
+const portfolioimg = new URL("./images/portfolio.jpg", import.meta.url).href;
 
 const postsArray = [
   {
     name: "Twimba",
-    image: "../images/twimba.jpg",
+    image: twimbaimg,
     subtitle: "This is a solo project to clone twitter and Scrimba.",
     id: 0,
     date: "August 05, 2025",
@@ -24,7 +31,7 @@ const postsArray = [
   },
   {
     name: "Pass Generator",
-    image: "/images/pass.jpg",
+    image: passimg,
     subtitle: "It's a solo project to generate random secured passwords",
     id: 2,
     date: "August 12, 2022",
@@ -34,7 +41,7 @@ const postsArray = [
   },
   {
     name: "Color Scheme Generator",
-    image: "/images/colorScheme.jpg",
+    image: schemeimg,
     subtitle: "Generate color palettes from a base color",
     id: 3,
     date: "September 22, 2022",
@@ -44,7 +51,7 @@ const postsArray = [
   },
   {
     name: "Mobile Leads Tracker 📱",
-    image: "/images/leadstrack.jpg",
+    image: leadsimg,
     subtitle: "Build a mobile app",
     id: 4,
     date: "May 6, 2025",
@@ -54,7 +61,7 @@ const postsArray = [
   },
   {
     name: "War game",
-    image: "/images/wargame.jpg",
+    image: wargameimg,
     subtitle: "Build a war game",
     id: 5,
     date: "September 28, 2022",
@@ -64,7 +71,7 @@ const postsArray = [
   },
   {
     name: "Meme Generator",
-    image: "/images/meme.jpg",
+    image: memeimg,
     subtitle: "Do a meme generator",
     id: 6,
     date: "November 25, 2022",
@@ -74,7 +81,7 @@ const postsArray = [
   },
   {
     name: "Portfolio Journal",
-    image: "/images/portfolio.jpg",
+    image: portfolioimg,
     subtitle: "Do a responsive blog for a solo project",
     id: 7,
     date: "October 12, 2025",
