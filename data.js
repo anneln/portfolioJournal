@@ -1,4 +1,11 @@
 import twimbaimg from "/images/twimba.jpg";
+import orderfoodimg from "/images/orderfood.jpg";
+import passimg from "/images/pass.jpg";
+import colorschemeimg from "/images/colorScheme.jpg";
+import leadstrackimg from "/images/leadstrack.jpg";
+import wargameimg from "/images/wargame.jpg";
+import memeimg from "/images/meme.jpg";
+import portfolioimg from "/images/portfolio.jpg";
 
 const postsArray = [
   {
@@ -14,7 +21,7 @@ const postsArray = [
   },
   {
     name: "Mobile Ordering App",
-    image: "/images/orderfood.jpg",
+    image: orderfoodimg,
     subtitle:
       "This is a solo project to create a mobile restaurant ordering application.",
     id: 1,
@@ -26,7 +33,7 @@ const postsArray = [
   },
   {
     name: "Pass Generator",
-    image: "/images/pass.jpg",
+    image: passimg,
     subtitle: "It's a solo project to generate random secured passwords",
     id: 2,
     date: "August 12, 2022",
@@ -37,7 +44,7 @@ const postsArray = [
   },
   {
     name: "Color Scheme Generator",
-    image: "/images/colorScheme.jpg",
+    image: colorschemeimg,
     subtitle: "Generate color palettes from a base color",
     id: 3,
     date: "September 22, 2022",
@@ -48,7 +55,7 @@ const postsArray = [
   },
   {
     name: "Mobile Leads Tracker 📱",
-    image: "/images/leadstrack.jpg",
+    image: leadstrackimg,
     subtitle: "Build a mobile app",
     id: 4,
     date: "May 6, 2025",
@@ -59,7 +66,7 @@ const postsArray = [
   },
   {
     name: "War game",
-    image: "/images/wargame.jpg",
+    image: wargameimg,
     subtitle: "Build a war game",
     id: 5,
     date: "September 28, 2022",
@@ -70,7 +77,7 @@ const postsArray = [
   },
   {
     name: "Meme Generator",
-    image: "/images/meme.jpg",
+    image: memeimg,
     subtitle: "Do a meme generator",
     id: 6,
     date: "November 25, 2022",
@@ -81,7 +88,7 @@ const postsArray = [
   },
   {
     name: "Portfolio Journal",
-    image: "/images/portfolio.jpg",
+    image: portfolioimg,
     subtitle: "Do a responsive blog for a solo project",
     id: 6,
     date: "October 13, 2025",
