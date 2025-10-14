@@ -1,7 +1,11 @@
 import postsArray from "./data.js";
 
+const sortedPosts = [...postsArray].sort(
+  (a, z) => new Date(z.date) - new Date(a.date)
+);
+
 function displayArticles(start, end) {
-  return postsArray
+  return sortedPosts
     .slice(start, end)
     .map(function (article) {
       return `
