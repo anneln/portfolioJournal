@@ -35,7 +35,7 @@ postList.addEventListener("click", function (e) {
   const articleId = post.dataset.id;
   const article = postsArray.find((post) => post.id == articleId);
   if (article && article.page) {
-    window.location.href = `${article.page}?id=${articleId}`;
+    window.location.href = `article.html?id=${articleId}`;
   }
 });
 

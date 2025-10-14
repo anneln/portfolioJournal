@@ -8,7 +8,6 @@ const postsArray = [
     description:
       "The app shoud render tweet from some pre-prepared data and add new tweets.</br> Each tweet will be likable and unlikable. <br>Users can reply to a tweet<br> Technical requirements : use data attributes | Use CDN for add icons | Use CDN for generate UUiDs | Deploy the project using Netlify and Github",
     link: "https://twimbanneln.netlify.app/",
-    page: "article.html",
   },
   {
     name: "Mobile Ordering App",
@@ -20,7 +19,6 @@ const postsArray = [
     description:
       "The app shoud display menu, render an order section, display a payment modal and finally show a confirmation message.<br>Technical requirements : Follow design spec on Figma | Render the menu option using Javascript | Be able to add and remove items | Have a payment modal with compulsory form inputs | Deploying with Netlify and Github desktop",
     link: "https://mobilerestorderingapp.netlify.app",
-    page: "article.html",
   },
   {
     name: "Pass Generator",
@@ -31,7 +29,6 @@ const postsArray = [
     description:
       "App to generate random secured passwords, users can copy pass for use it ",
     link: "https://anneln.github.io/PassGenerator/",
-    page: "article.html",
   },
   {
     name: "Color Scheme Generator",
@@ -42,7 +39,6 @@ const postsArray = [
     description:
       "Make a color scheme generator from scratch in HTML, CSS and JS. <br>Use API 'the color api' and Deploy on Netlify ",
     link: "https://color-scheme-generator-ahb.netlify.app/",
-    page: "article.html",
   },
   {
     name: "Mobile Leads Tracker 📱",
@@ -53,7 +49,6 @@ const postsArray = [
     description:
       "This mobile app is useful to save favorite links <br> To built it I used Firebase and web application manifest to install app on mobile screen then I deploy it on Netlify ",
     link: "https://leads-tracker-ahb.netlify.app/",
-    page: "article.html",
   },
   {
     name: "War game",
@@ -64,7 +59,6 @@ const postsArray = [
     description:
       "Do a war game using deck of cards API, callbacks and Promises",
     link: "https://anneln.github.io/War-game/",
-    page: "article.html",
   },
   {
     name: "Meme Generator",
@@ -75,7 +69,6 @@ const postsArray = [
     description:
       " Learn react basis with building a Meme Generator using imgflip API, controlled components (forms), functional programming in REACT, fetching data and view side effects",
     link: "https://incredible-cactus-bacac7.netlify.app/",
-    page: "article.html",
   },
   {
     name: "Portfolio Journal",
@@ -86,7 +79,6 @@ const postsArray = [
     description:
       "Developing a responsive portfolio blog with a mobile-first design approach.",
     link: "https://portfolio-anne-helene.netlify.app/",
-    page: "article.html",
   },
 ];
 export default postsArray;
