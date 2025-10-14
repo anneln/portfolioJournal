@@ -14,4 +14,4 @@ The “About Me” page offers a personal introduction.
 - [x] Responsive design (media queries, relatives units, viewport meta tag) 🚀
 - [x] Deploy on Github and Netlify
 
-🎉
+-[see my portfolio](https://portfolio-anne-helene.netlify.app) 🎉
