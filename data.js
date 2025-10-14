@@ -1,7 +1,9 @@
+import twimbaimg from "/images/twimba.jpg";
+
 const postsArray = [
   {
     name: "Twimba",
-    image: "/images/twimba.jpg",
+    image: twimbaimg,
     subtitle: "This is a solo project to clone twitter and Scrimba.",
     id: 0,
     date: "August 05, 2025",
