@@ -1,7 +1,7 @@
 const postsArray = [
   {
     name: "Twimba",
-    image: "/twimba.jpg",
+    image: "./images/twimba.jpg",
     subtitle: "This is a solo project to clone twitter and Scrimba.",
     id: 0,
     date: "August 05, 2025",
@@ -74,10 +74,10 @@ const postsArray = [
     name: "Portfolio Journal",
     image: "/images/portfolio.jpg",
     subtitle: "Do a responsive blog for a solo project",
-    id: 6,
-    date: "October 13, 2025",
+    id: 7,
+    date: "October 12, 2025",
     description:
-      "Developing a responsive portfolio blog with a mobile-first design approach.",
+      "Developing a responsive portfolio blog with a mobile-first design approach. The most recent articles are displaying first.",
     link: "https://portfolio-anne-helene.netlify.app/",
   },
 ];
