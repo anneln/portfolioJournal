@@ -1,9 +1,3 @@
-/*import { defineConfig } from "vite";
-
-export default defineConfig({
-  plugins: [],
-});*/
-
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
