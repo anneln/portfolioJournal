@@ -37,8 +37,8 @@ body {
   justify-content: space-between;
   padding: 1rem;
   margin: 0;
-  border-bottom: 1px dotted #3db770;
   background-color: #fff;
+  box-shadow: 0 2px 1px #3db770;
 }
 
 .nav-links {
@@ -87,6 +87,7 @@ h1 {
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 8px;
+  box-shadow: 0 3px 6px #8b8989;
 }
 
 #posts-list {
@@ -188,8 +189,9 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   background: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
+  text-align: center;
 }
 
 .article-title {
@@ -212,6 +214,8 @@ footer {
 .article-img {
   margin: 0.8rem auto;
   width: 100%;
+  box-shadow: 1px 3px 6px #8b8989;
+  border-radius: 8px;
 }
 
 .article-link {
@@ -225,7 +229,6 @@ footer {
   border-right: none;
   border-bottom: 2px solid #000;
   text-decoration: none;
-  text-align: center;
 }
 
 .article-link:hover {
@@ -296,12 +299,17 @@ footer {
 
   /*article*/
   #art {
-    padding: 3rem;
+    padding: 1.5rem;
+    margin: 1rem auto;
   }
 
   .article-img {
     margin: 0.8rem auto;
     width: 70%;
+  }
+  .grid-container {
+    width: 80%;
+    margin: 1rem auto;
   }
 }
 
@@ -312,17 +320,18 @@ footer {
 
   .solo-post {
     text-align: center;
+    width: 60%;
   }
 
   .article-img {
     margin: 0.8rem auto;
-    width: 70%;
+    width: 50%;
   }
 
   .article-paragraph {
     padding-left: 3rem;
     padding-right: 3rem;
-    text-align: left;
+    text-align: center;
   }
   .me {
     gap: 0.5rem;
