@@ -86,7 +86,7 @@ const postsArray = [
     id: 7,
     date: "October 12, 2025",
     description:
-      "Developing a responsive portfolio blog with a mobile-first design approach. The most recent articles are displaying first.",
+      "Developing a responsive portfolio blog with a mobile-first design approach. The most recent articles are displayed first.",
     link: "https://portfolio-anne-helene.netlify.app/",
   },
 ];
