@@ -8,6 +8,7 @@ const memeimg = new URL("./images/meme.jpg", import.meta.url).href;
 const portfolioimg = new URL("./images/portfolio.jpg", import.meta.url).href;
 const whatchlistimg = new URL("./images/whatchlist.png", import.meta.url).href;
 const chefanneln = new URL("./images/chefanneln.png", import.meta.url).href;
+const tenzies = new URL("./images/dixdice.png", import.meta.url).href;
 
 const postsArray = [
   {
@@ -98,19 +99,29 @@ const postsArray = [
     id: 8,
     date: "March 26, 2026",
     description:
-      "Developed a movie search application by following the Figma design. Connected the app to the OMDb API to fetch movie data, saved the watchlist in Local Storage, and prevented duplicate entries. Built the application using a mobile-first approach with responsive and accessible design, then deployed it on Netlify.",
+      "Developed a movie search application by following the Figma design.<br> Connected the app to the OMDb API to fetch movie data, saved the watchlist in Local Storage, and prevented duplicate entries. <br>Built the application using a mobile-first approach with responsive and accessible design, then deployed it on Netlify.",
     link: "https://movieswishlist.netlify.app/",
   },
   {
     name: "Chef AnneLn AI",
     image: chefanneln,
     subtitle:
-      "It’s a solo project inspired by a Scrimba course. The app collects ingredients from the user through a form, then sends them to an AI with a prompt asking for a recipe using those ingredients.",
+      "It’s a solo project inspired by a Scrimba course. <br>The app collects ingredients from the user through a form, then sends them to an AI with a prompt asking for a recipe using those ingredients.",
     id: 9,
     date: "May 2, 2026",
     description:
-      "AI Recipe Generator — A React-based application built with Vite.js that uses AI to generate recipes from user ingredients. The app includes ingredient validation, multilingual support, Markdown rendering, responsive state management, and interactive animations to create a smooth user experience.",
+      "AI Recipe Generator — A React-based application built with Vite.js that uses AI to generate recipes from user ingredients.<br> The app includes ingredient validation, multilingual support, Markdown rendering, responsive state management, and interactive animations to create a smooth user experience.",
     link: "https://chefannelnai.netlify.app/",
+  },
+  {
+    name: "Dix Dice Game",
+    image: tenzies,
+    subtitle: "Tenzi — A simple dice game built with React.",
+    id: 10,
+    date: "June 9, 2026",
+    description:
+      "The goal of the game is to get all 10 dice to show the same value. Players can click on the dice to hold them between rolls and continue rolling until all the dice have the same number.<br>This project was developed using several technologies, including React and Vite for building the application. NanoID was used to generate unique IDs for each die, and React Confetti was integrated to create a celebration animation when the player wins.<br> The game includes several features such as rolling the dice, holding and unholding dice, detecting when the player has won, displaying a confetti animation after victory, starting a new game, and tracking the time with a timer.<br> The project is deployed on Netlify, allowing users to access and play the game online.",
+    link: "https://dixdicegame.netlify.app/",
   },
 ];
 export default postsArray;
