@@ -7,6 +7,7 @@ const wargameimg = new URL("./images/wargame.jpg", import.meta.url).href;
 const memeimg = new URL("./images/meme.jpg", import.meta.url).href;
 const portfolioimg = new URL("./images/portfolio.jpg", import.meta.url).href;
 const whatchlistimg = new URL("./images/whatchlist.png", import.meta.url).href;
+const chefanneln = new URL("./images/chefanneln.png", import.meta.url).href;
 
 const postsArray = [
   {
@@ -102,7 +103,7 @@ const postsArray = [
   },
   {
     name: "Chef AnneLn AI",
-    image: whatchlistimg,
+    image: chefanneln,
     subtitle:
       "It’s a solo project inspired by a Scrimba course. The app collects ingredients from the user through a form, then sends them to an AI with a prompt asking for a recipe using those ingredients.",
     id: 9,
