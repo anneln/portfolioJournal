@@ -6,6 +6,8 @@ const leadsimg = new URL("./images/leadstrack.jpg", import.meta.url).href;
 const wargameimg = new URL("./images/wargame.jpg", import.meta.url).href;
 const memeimg = new URL("./images/meme.jpg", import.meta.url).href;
 const portfolioimg = new URL("./images/portfolio.jpg", import.meta.url).href;
+const whatchlistimg = new URL("./images/images/whatchlist.png", import.meta.url)
+  .href;
 
 const postsArray = [
   {
@@ -88,6 +90,16 @@ const postsArray = [
     description:
       "Developing a responsive portfolio blog with a mobile-first design approach. The most recent articles are displayed first.",
     link: "https://portfolio-anne-helene.netlify.app/",
+  },
+  {
+    name: "Movie WatchList",
+    image: whatchlistimg,
+    subtitle: "This is a solo project to create a movie watchlist.",
+    id: 7,
+    date: "March, 2026",
+    description:
+      "Developed a movie search application by following the Figma design. Connected the app to the OMDb API to fetch movie data, saved the watchlist in Local Storage, and prevented duplicate entries. Built the application using a mobile-first approach with responsive and accessible design, then deployed it on Netlify.",
+    link: "https://movieswishlist.netlify.app/",
   },
 ];
 export default postsArray;
