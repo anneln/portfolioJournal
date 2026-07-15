@@ -95,10 +95,21 @@ const postsArray = [
     image: whatchlistimg,
     subtitle: "This is a solo project to create a movie watchlist.",
     id: 8,
-    date: "March, 2026",
+    date: "March 26, 2026",
     description:
       "Developed a movie search application by following the Figma design. Connected the app to the OMDb API to fetch movie data, saved the watchlist in Local Storage, and prevented duplicate entries. Built the application using a mobile-first approach with responsive and accessible design, then deployed it on Netlify.",
     link: "https://movieswishlist.netlify.app/",
+  },
+  {
+    name: "Chef AnneLn AI",
+    image: whatchlistimg,
+    subtitle:
+      "It’s a solo project inspired by a Scrimba course. The app collects ingredients from the user through a form, then sends them to an AI with a prompt asking for a recipe using those ingredients.",
+    id: 9,
+    date: "May 2, 2026",
+    description:
+      "AI Recipe Generator — A React-based application built with Vite.js that uses AI to generate recipes from user ingredients. The app includes ingredient validation, multilingual support, Markdown rendering, responsive state management, and interactive animations to create a smooth user experience.",
+    link: "https://chefannelnai.netlify.app/",
   },
 ];
 export default postsArray;
