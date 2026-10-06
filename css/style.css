@@ -2,13 +2,14 @@ html,
 body {
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
-  color: #151515;
+  color: #f1f5f4;
+  background-color: #000e1e;
 }
 
 .container {
   width: 96%;
   margin: 0 auto;
-  background-color: #fafafa;
+  background-color: #000e1e;
 }
 
 /*navigation*/
@@ -25,7 +26,7 @@ body {
 
 .title-nav {
   text-transform: capitalize;
-  color: #0e0e0e;
+  color: #3db770;
   font-weight: 500;
   letter-spacing: -0.601px;
   padding-left: 0.5rem;
@@ -37,8 +38,7 @@ body {
   justify-content: space-between;
   padding: 1rem;
   margin: 0;
-  background-color: #fff;
-  box-shadow: 0 2px 1px #3db770;
+  box-shadow: 0 1px 0px #3db770;
 }
 
 .nav-links {
@@ -48,7 +48,7 @@ body {
 .nav-links a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #090909;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -61,6 +61,7 @@ body {
   display: none;
 }
 
+/*
 .hero {
   background-image: url("/images/blog-image-hero.png");
   background-size: cover;
@@ -71,7 +72,7 @@ body {
   margin: 0;
   padding: 2rem;
 }
-
+*/
 h1 {
   margin-top: 3.5rem;
 }
@@ -85,9 +86,9 @@ h1 {
   margin: 1rem auto;
   width: 20rem;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #102a3a;
   border-radius: 8px;
-  box-shadow: 0px 2px 3px #8b8989;
+  box-shadow: 0px 2px 3px #3db770;
 }
 
 #posts-list {
@@ -106,22 +107,24 @@ h1 {
 }
 
 #post-article:hover {
-  background-color: rgba(243, 235, 247, 0.8);
+  background: rgba(61, 183, 112, 0.08);
+  border-color: rgba(61, 183, 112, 0.45);
 }
 
 .btn {
   display: block;
   margin: 1rem auto;
+  padding-bottom: 0.5rem;
   cursor: pointer;
-  color: #000;
+  color: #3db770;
   text-align: center;
   font-size: 0.89rem;
   font-weight: 700;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #000;
-  background: #fafafa;
+  border-bottom: 2px solid #3db770;
+  background-color: transparent;
 }
 
 .btn:hover {
@@ -132,9 +135,11 @@ h1 {
 footer {
   color: #fff;
   text-align: center;
-  background-color: #202020;
+  background-color: #000e1e;
+  border-top: 1px solid #1d4050;
   margin-top: 0;
   font-size: 0.75rem;
+  margin-top: 2rem;
   padding: 1rem;
 }
 
@@ -148,7 +153,7 @@ footer {
   text-align: left;
   max-width: 900px;
   margin: 0 auto;
-  background: white;
+  background: #102a3a;
   border-radius: 8px;
   margin-top: 1.5rem;
 }
@@ -171,7 +176,7 @@ footer {
 
 .recent-posts-list {
   text-align: center;
-  color: #141414;
+  color: #fff;
   font-size: 1rem;
 }
 
@@ -288,7 +293,7 @@ footer {
 
   .recent-posts-list {
     text-align: center;
-    color: #141414;
+    color: #fff;
     font-size: 1.5rem;
     font-weight: 700;
   }
