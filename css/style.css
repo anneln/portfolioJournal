@@ -158,6 +158,24 @@ footer {
   margin-top: 1.5rem;
 }
 
+.who,
+.post {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(61, 183, 112, 0.14),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(20, 110, 150, 0.12),
+      transparent 40%
+    ),
+    #102a3a;
+}
+
 .me {
   text-align: center;
   padding: 0 2rem;
