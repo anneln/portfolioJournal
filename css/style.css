@@ -2,14 +2,21 @@ html,
 body {
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
-  color: #f1f5f4;
-  background-color: #000e1e;
+  color: #9db3c2;
+  background-color: #051a2f;
+}
+
+h1,
+h2,
+h4,
+.post-date {
+  color: #e7eef1;
 }
 
 .container {
   width: 96%;
   margin: 0 auto;
-  background-color: #000e1e;
+  background-color: #051a2f;
 }
 
 /*navigation*/
@@ -38,7 +45,8 @@ body {
   justify-content: space-between;
   padding: 1rem;
   margin: 0;
-  box-shadow: 0 1px 0px #3db770;
+  border-bottom: 1px solid #1d3a57;
+  box-shadow: none;
 }
 
 .nav-links {
@@ -48,12 +56,12 @@ body {
 .nav-links a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #e7eef1;
   font-weight: 600;
 }
 
 .nav-links li {
-  border-bottom: 1px solid #090909;
+  border-bottom: 1px solid #1d3a57;
   width: 45%;
 }
 
@@ -61,18 +69,6 @@ body {
   display: none;
 }
 
-/*
-.hero {
-  background-image: url("/images/blog-image-hero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  text-align: left;
-  margin: 0;
-  padding: 2rem;
-}
-*/
 h1 {
   margin-top: 3.5rem;
 }
@@ -83,12 +79,13 @@ h1 {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  margin: 1rem auto;
-  width: 20rem;
+  width: auto;
   box-sizing: border-box;
-  background-color: #102a3a;
-  border-radius: 8px;
-  box-shadow: 0px 2px 3px #3db770;
+  background-color: #0c2842;
+  border: 1px solid #1d3a57;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 #posts-list {
@@ -99,16 +96,42 @@ h1 {
 
 .blog-img {
   height: 14.5rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
-#post-article {
-  cursor: pointer;
-  padding: 1.2rem;
+.post-description {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-#post-article:hover {
-  background: rgba(61, 183, 112, 0.08);
-  border-color: rgba(61, 183, 112, 0.45);
+.post-date {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  color: #9db3c2;
+  font-size: 0.85rem;
+}
+
+.post-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e7eef1;
+}
+
+.post-paragraphe {
+  margin: 0;
+  color: #9db3c2;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.post:hover {
+  background: #12304e;
+  border-color: #3db770;
 }
 
 .btn {
@@ -129,15 +152,15 @@ h1 {
 
 .btn:hover {
   text-transform: uppercase;
+  border-bottom-color: #e7eef1;
 }
 
 /*Footer*/
 footer {
-  color: #fff;
+  color: #e7eef1;
   text-align: center;
-  background-color: #000e1e;
-  border-top: 1px solid #1d4050;
-  margin-top: 0;
+  background-color: #051a2f;
+  border-top: 1px solid #1d3a57;
   font-size: 0.75rem;
   margin-top: 2rem;
   padding: 1rem;
@@ -153,27 +176,11 @@ footer {
   text-align: left;
   max-width: 900px;
   margin: 0 auto;
-  background: #102a3a;
-  border-radius: 8px;
+  background-color: #0c2842;
+  border: 1px solid #1d3a57;
+  border-radius: 12px;
   margin-top: 1.5rem;
-}
-
-.who,
-.post {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 90% 0%,
-      rgba(61, 183, 112, 0.14),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at 0% 100%,
-      rgba(20, 110, 150, 0.12),
-      transparent 40%
-    ),
-    #102a3a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .me {
@@ -194,12 +201,12 @@ footer {
 
 .recent-posts-list {
   text-align: center;
-  color: #fff;
+  color: #e7eef1;
   font-size: 1rem;
 }
 
 .about {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 /*solo article*/
@@ -211,22 +218,24 @@ footer {
 .solo-post {
   max-width: 900px;
   margin: 0 auto;
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
+  background-color: #0c2842;
+  padding: 2rem;
+  border-radius: 12px;
   text-align: center;
+  border: 1px solid #1d3a57;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .article-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #151515;
+  color: #e7eef1;
 }
 
 .pitch {
   font-size: 1.1rem;
-  color: #666;
+  color: #9db3c2;
   margin-bottom: 1.5rem;
 }
 
@@ -237,29 +246,30 @@ footer {
 .article-img {
   margin: 0.8rem auto;
   width: 100%;
-  box-shadow: 1px 3px 6px #8b8989;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
 }
 
 .article-link {
   cursor: pointer;
-  color: #000;
+  color: #3bd770;
   text-align: center;
   font-size: 0.89rem;
   font-weight: 700;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #3bd770;
   text-decoration: none;
 }
 
 .article-link:hover {
   text-transform: uppercase;
+  border-bottom: 2px solid #e7eef1;
 }
 
 #copyright {
-  color: #fff;
+  color: #e7eef1;
 }
 /*media queries*/
 @media (min-width: 480px) {
@@ -280,9 +290,7 @@ footer {
     border-bottom: none;
     width: auto;
   }
-  .hero {
-    height: 30rem;
-  }
+
   h1 {
     padding-top: 15rem;
   }
@@ -311,7 +319,7 @@ footer {
 
   .recent-posts-list {
     text-align: center;
-    color: #fff;
+    color: #e7eef1;
     font-size: 1.5rem;
     font-weight: 700;
   }

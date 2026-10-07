@@ -1,7 +1,7 @@
 import postsArray from "./data.js";
 
 const sortedPosts = [...postsArray].sort(
-  (a, z) => new Date(z.date) - new Date(a.date)
+  (a, z) => new Date(z.date) - new Date(a.date),
 );
 
 function displayArticles(start, end) {
@@ -13,6 +13,7 @@ function displayArticles(start, end) {
               <img
                 src="${article.image}"
                 class="blog-img"
+                alt="${article.name}"
               />
               <div class="post-description">
                 <span class="post-date">${article.date}</span>
@@ -36,6 +37,8 @@ postList.addEventListener("click", function (e) {
   const article = postsArray.find((post) => post.id == articleId);
   if (article) {
     window.location.href = `article.html?id=${articleId}`;
+  } else {
+    art.innerHTML = `...`;
   }
 });
 
