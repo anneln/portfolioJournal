@@ -99,6 +99,7 @@ h1 {
   width: 100%;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
+  cursor: pointer;
 }
 
 .post-description {
@@ -106,12 +107,13 @@ h1 {
   flex: 1;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .post-date {
   margin-top: 0;
   margin-bottom: 0.25rem;
-  color: #9db3c2;
+  color: #e7eef1;
   font-size: 0.85rem;
 }
 
@@ -120,6 +122,7 @@ h1 {
   font-size: 1.3rem;
   font-weight: 700;
   color: #e7eef1;
+  cursor: pointer;
 }
 
 .post-paragraphe {
@@ -170,6 +173,7 @@ footer {
 #ahb-img {
   border-radius: 50%;
   width: 9rem;
+  margin: 1rem;
 }
 
 .who {
@@ -235,7 +239,7 @@ footer {
 
 .pitch {
   font-size: 1.1rem;
-  color: #9db3c2;
+  color: #edf2f4;
   margin-bottom: 1.5rem;
 }
 
