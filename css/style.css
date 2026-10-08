@@ -3,7 +3,9 @@ body {
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
   color: #9db3c2;
-  background-color: #051a2f;
+  background: linear-gradient(180deg, #03101f 0%, #051a2f 50%, #0a2a4a 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 h1,
@@ -16,7 +18,7 @@ h4,
 .container {
   width: 96%;
   margin: 0 auto;
-  background-color: #051a2f;
+  background-color: transparent;
 }
 
 /*navigation*/
@@ -58,6 +60,11 @@ h4,
   text-decoration: none;
   color: #e7eef1;
   font-weight: 600;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #3db770;
 }
 
 .nav-links li {
@@ -162,7 +169,7 @@ h1 {
 footer {
   color: #e7eef1;
   text-align: center;
-  background-color: #051a2f;
+
   border-top: 1px solid #1d3a57;
   font-size: 0.75rem;
   margin-top: 2rem;
@@ -228,6 +235,59 @@ footer {
   text-align: center;
   border: 1px solid #1d3a57;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.solo-post::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(61, 183, 112, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(61, 183, 112, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+  -webkit-mask-image:
+    repeating-linear-gradient(
+      to right,
+      black 0px,
+      black 3px,
+      transparent 3px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      black 0px,
+      black 3px,
+      transparent 3px,
+      transparent 8px
+    ),
+    radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%);
+  mask-image:
+    repeating-linear-gradient(
+      to right,
+      black 0px,
+      black 3px,
+      transparent 3px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      black 0px,
+      black 3px,
+      transparent 3px,
+      transparent 8px
+    ),
+    radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+.solo-post > * {
+  position: relative;
+  z-index: 1;
 }
 
 .article-title {
@@ -256,14 +316,14 @@ footer {
 
 .article-link {
   cursor: pointer;
-  color: #3bd770;
+  color: #3db770;
   text-align: center;
   font-size: 0.89rem;
   font-weight: 700;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #3bd770;
+  border-bottom: 2px solid #3db770;
   text-decoration: none;
 }
 

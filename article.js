@@ -57,6 +57,7 @@ const article = postsArray.find((post) => post.id == articleId);
 
 art.innerHTML = `
     <article class="solo-post" >
+    
       <h2 class="article-title">${article.name}</h2>
       <p class="pitch">${article.subtitle}</p>
       <img class="article-img" src="${article.image}" alt="${article.name}"  />
