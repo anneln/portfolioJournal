@@ -1,7 +1,7 @@
 import postsArray from "./data.js";
 
 const sortedPosts = [...postsArray].sort(
-  (a, z) => new Date(z.date) - new Date(a.date)
+  (a, z) => new Date(z.date) - new Date(a.date),
 );
 
 function displayArticles(start, end) {
@@ -51,4 +51,14 @@ window.addEventListener("load", () => {
   const copyright = document.getElementById("copyright");
   copyright.innerHTML = new Date().getFullYear();
   toString();
+});
+
+const currentPage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
 });
