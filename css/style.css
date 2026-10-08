@@ -338,10 +338,6 @@ footer {
     margin: 1rem auto;
   }
 
-  .article-img {
-    margin: 0.8rem auto;
-    width: 70%;
-  }
   .grid-container {
     width: 80%;
     margin: 1rem auto;
@@ -357,10 +353,9 @@ footer {
     text-align: center;
     width: 60%;
   }
-
   .article-img {
-    margin: 0.8rem auto;
-    width: 50%;
+    display: block;
+    width: 85%;
   }
 
   .article-paragraph {

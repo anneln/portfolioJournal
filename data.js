@@ -1,14 +1,17 @@
-const twimbaimg = new URL("./images/twimba.jpg", import.meta.url).href;
-const orderimg = new URL("./images/orderfood.jpg", import.meta.url).href;
+const twimbaimg = new URL("./images/twimbajs.png", import.meta.url).href;
+const orderimg = new URL("./images/jimmydiner.png", import.meta.url).href;
 const passimg = new URL("./images/pass.jpg", import.meta.url).href;
 const schemeimg = new URL("./images/colorScheme.jpg", import.meta.url).href;
 const leadsimg = new URL("./images/leadstrack.jpg", import.meta.url).href;
 const wargameimg = new URL("./images/wargame.jpg", import.meta.url).href;
 const memeimg = new URL("./images/meme.jpg", import.meta.url).href;
-const portfolioimg = new URL("./images/portfolio.jpg", import.meta.url).href;
-const whatchlistimg = new URL("./images/whatchlist.png", import.meta.url).href;
-const chefanneln = new URL("./images/chefanneln.png", import.meta.url).href;
-const tenzies = new URL("./images/dixdice.png", import.meta.url).href;
+const portfolioimg = new URL("./images/blog-image-05.png", import.meta.url)
+  .href;
+const whatchlistimg = new URL("./images/watchlist.png", import.meta.url).href;
+const chefanneln = new URL("./images/chefai.png", import.meta.url).href;
+const tenzies = new URL("./images/tenzies.png", import.meta.url).href;
+const assemblygame = new URL("./images/assemblygame.png", import.meta.url).href;
+const quizzical = new URL("./images/quizzical.png", import.meta.url).href;
 
 const postsArray = [
   {
@@ -122,6 +125,28 @@ const postsArray = [
     description:
       "The goal of the game is to get all 10 dice to show the same value. Players can click on the dice to hold them between rolls and continue rolling until all the dice have the same number.<br>This project was developed using several technologies, including React and Vite for building the application. NanoID was used to generate unique IDs for each die, and React Confetti was integrated to create a celebration animation when the player wins.<br> The game includes several features such as rolling the dice, holding and unholding dice, detecting when the player has won, displaying a confetti animation after victory, starting a new game, and tracking the time with a timer.<br> The project is deployed on Netlify, allowing users to access and play the game online.",
     link: "https://dixdicegame.netlify.app/",
+  },
+  {
+    name: "Assembly Hangman",
+    image: assemblygame,
+    subtitle:
+      "A hangman-style game where every wrong guess 'eliminates' a programming language..",
+    id: 11,
+    date: "July 22, 2026",
+    description:
+      "A hangman-style game rebuilt from scratch from a Scrimba exercise — every wrong guess 'eliminates' a programming language. Guess the word letter by letter with a virtual keyboard before all languages are gone. Each wrong letter triggers a randomly selected farewell message ('Farewell, C++', 'Adios, Java'...) as another language bites the dust, with a confetti animation on victory. Built with React (useState, derived state), clsx, and react-confetti.",
+    link: "https://presquependu.netlify.app/",
+  },
+  {
+    name: "Quiz App",
+    image: quizzical,
+    subtitle:
+      "A quiz app made with React. You can answer quiz questions, get your score and share it.",
+    id: 12,
+    date: "August 7, 2026",
+    description:
+      "Quizzical — A React quiz app fetching questions from the Open Trivia Database API. Following a Scrimba brief and design, I coded the entire application myself, adding an extra feature beyond the requirements: a difficulty selector (easy/medium/hard). Features randomized questions and answers, instant green/red feedback, automatic scoring, a WhatsApp score share, and a confetti celebration on a winning score.",
+    link: "https://quizzbyanneln.netlify.app/",
   },
 ];
 export default postsArray;
