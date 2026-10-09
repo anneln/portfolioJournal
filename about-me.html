@@ -33,7 +33,9 @@
               src="/images/logo.png"
               alt="logo de Anne-Hélène"
             />
-            <p class="title-nav">Anne-Hélène | Portfolio</p>
+            <p class="title-nav">
+              Anne-Hélène <span class="white-span">|</span> Portfolio
+            </p>
           </a>
           <i class="fa-solid fa-bars" id="hamburger"></i>
           <ul class="nav-links">
@@ -162,10 +164,16 @@
           </section>
         </div>
         <div>
-          <button class="btn" id="more-btn">Read More</button>
+          <button class="btn" id="more-btn">View More</button>
           <!--put grid here with view more button-->
         </div>
       </main>
+      <button id="btnTop" aria-label="Back to top">
+        <span class="icon-wrap">
+          <i class="fa-regular fa-square" aria-hidden="true"></i>
+          <i class="fa-solid fa-angle-up" aria-hidden="true"></i>
+        </span>
+      </button>
       <footer>
         <p>
           Copyright &copy;
@@ -175,6 +183,7 @@
         </p>
       </footer>
     </div>
+
     <script type="module" src="index.js"></script>
   </body>
 </html>
