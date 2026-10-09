@@ -16,6 +16,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://kit.fontawesome.com/0508c40e43.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="image-icon" href="/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -29,12 +33,16 @@
               src="/images/logo.png"
               alt="logo de Anne-Hélène"
             />
-            <p class="title-nav">My portfolio journal</p>
+            <p class="title-nav">Anne-Hélène | Portfolio</p>
           </a>
           <i class="fa-solid fa-bars" id="hamburger"></i>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About me</a></li>
+            <li>
+              <a href="about-me.html" class="active" aria-current="page"
+                >About me</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
@@ -47,12 +55,34 @@
               alt="photo Anne-Hélène Bricet"
             />
             <div class="my-presentation">
-              <h2>
-                Hi, My name is Anne-Hélène,<span class="message-span"
-                  ><br />
-                  I'm a front-end developer !</span
-                >
-              </h2>
+              <div class="title-and-social-links">
+                <h2>
+                  Hi, My name is Anne-Hélène,<span class="green-span"
+                    ><br />
+                    I'm a front-end developer</span
+                  >
+                </h2>
+                <div class="icon-container">
+                  <a
+                    href="https://github.com/anneln"
+                    target="_blank"
+                    aria-label="Anne-Hélène's GitHub profile"
+                  >
+                    <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/annehelenebricet/"
+                    target="_blank"
+                    aria-label="Anne-Hélène's LinkedIn profile"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+
               <p id="about-intro">
                 I've been working independently since 2017, building and
                 customizing websites for small businesses, cultural venues and
@@ -62,10 +92,10 @@
             </div>
           </div>
           <div class="about">
-            <h4>Why did I start codding ?</h4>
+            <h4>How I got here ?</h4>
             <p>
               I started my career in customer service and product management at
-              Filofax UK, where I led after-sales and customer support and
+              Filofax, where I led after-sales and customer support and
               relaunched the Yard-O-LED brand (sales doubled in 12 months).
               <br />In parallel, I completed a Master's degree in Marketing at
               the CNAM, studying in the evenings.

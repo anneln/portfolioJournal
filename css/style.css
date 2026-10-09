@@ -65,7 +65,8 @@ h4,
 }
 
 .nav-links a.active,
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus {
   color: #3db770;
 }
 
@@ -76,6 +77,11 @@ h4,
 
 #hamburger {
   display: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem;
 }
 
 h1 {
@@ -199,6 +205,8 @@ footer {
   border-radius: 12px;
   margin-top: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
 }
 
 .me {
@@ -221,8 +229,12 @@ footer {
   font-size: 1.2rem;
 }
 
-.message-span {
+.green-span {
   color: #3db770;
+}
+
+.white-span {
+  color: #f1f5f4;
 }
 
 .recent-posts-list {
@@ -233,6 +245,16 @@ footer {
 
 .about {
   padding: 2rem;
+}
+
+.fa-brands {
+  color: #3db770;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+
+.fa-brands:hover {
+  transform: scale(1.08);
 }
 
 /*solo article*/
@@ -254,7 +276,9 @@ footer {
   overflow: hidden;
 }
 
-.solo-post::before {
+/*code from patterncraft website*/
+.solo-post::before,
+.who::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -350,6 +374,7 @@ footer {
 #copyright {
   color: #e7eef1;
 }
+
 /*media queries*/
 @media (min-width: 480px) {
   .logo-div {
@@ -378,13 +403,17 @@ footer {
     align-items: center;
   }
   .my-presentation {
-    text-align: left;
+    text-align: center;
   }
 
   .my-presentation h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: -1.08px;
+  }
+
+  .about {
+    padding: 2.5rem;
   }
 
   .about h4 {
@@ -397,10 +426,6 @@ footer {
     color: #e7eef1;
     font-size: 1.5rem;
     font-weight: 700;
-  }
-
-  .about {
-    padding: 2.5rem;
   }
 
   /*article*/
@@ -437,5 +462,17 @@ footer {
   .me {
     gap: 0.5rem;
     justify-content: flex-start;
+  }
+  .title-and-social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
   }
 }
