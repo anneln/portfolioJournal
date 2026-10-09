@@ -76,3 +76,11 @@ window.addEventListener("load", () => {
   copyright.innerHTML = new Date().getFullYear();
   toString();
 });
+const btnTop = document.getElementById("btnTop");
+window.addEventListener("scroll", () => {
+  btnTop.classList.toggle("visible", window.scrollY > 300);
+});
+
+btnTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
