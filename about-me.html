@@ -26,7 +26,7 @@
   <body>
     <div class="container">
       <header>
-        <nav class="navbar">
+        <div class="navbar">
           <a class="logo-div" href="index.html">
             <img
               id="logoAhb"
@@ -37,16 +37,24 @@
               Anne-Hélène <span class="white-span">|</span> Portfolio
             </p>
           </a>
-          <i class="fa-solid fa-bars" id="hamburger"></i>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="about-me.html" class="active" aria-current="page"
-                >About me</a
-              >
-            </li>
-          </ul>
-        </nav>
+          <button
+            aria-label="menu"
+            aria-expanded="false"
+            aria-controls="main-nav"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <nav id="main-nav" hidden>
+            <ul class="nav-links">
+              <li>
+                <a href="index.html" aria-current="page">Home</a>
+              </li>
+              <li><a href="about-me.html" class="active">About me</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
         <section class="who">
