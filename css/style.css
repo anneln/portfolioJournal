@@ -61,6 +61,8 @@ h4,
   text-transform: uppercase;
   text-decoration: none;
   color: #e7eef1;
+  display: block;
+  padding: 0.5rem 0;
   font-weight: 600;
 }
 
@@ -75,13 +77,54 @@ h4,
   width: 45%;
 }
 
-#hamburger {
+.navbar > button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 44px;
+  height: 44px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  background: #e7eef1;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.navbar > button[aria-expanded="true"] #hamburger-line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.navbar > button[aria-expanded="true"] #hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar > button[aria-expanded="true"] #hamburger-line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+#main-nav {
   display: none;
+}
+
+#main-nav.visible {
+  display: block;
 }
 
 .hero {
   text-align: center;
-  padding: 3rem;
+  padding: 0.5rem;
 }
 
 h1 {
@@ -106,7 +149,7 @@ h1 {
 
 #posts-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -215,7 +258,7 @@ footer {
 }
 
 .my-presentation h2 {
-  font-size: 2.17rem;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -1.08px;
 }
@@ -260,14 +303,14 @@ footer {
 /*solo article*/
 
 #art {
-  margin: 2rem;
+  margin: 1rem auto;
 }
 
 .solo-post {
   max-width: 900px;
   margin: 0 auto;
   background-color: #0c2842;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 12px;
   text-align: center;
   border: 1px solid #1d3a57;
@@ -337,9 +380,9 @@ footer {
 }
 
 .pitch {
-  font-size: 1.1rem;
   color: #edf2f4;
   margin-bottom: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .article-description {
@@ -428,6 +471,15 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+
+  .navbar > button {
+    display: none;
+  }
+
+  #main-nav {
+    display: block !important;
+  }
+
   .nav-links {
     gap: 1rem;
     display: flex;
@@ -435,6 +487,10 @@ footer {
   .nav-links li {
     border-bottom: none;
     width: auto;
+  }
+
+  .hero {
+    padding: 3rem;
   }
 
   /*about me*/
@@ -449,23 +505,14 @@ footer {
   }
 
   .my-presentation h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1.08px;
+    font-size: 1.9rem;
   }
 
   .about {
     padding: 2.5rem;
   }
 
-  .about h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-
   .recent-posts-list {
-    text-align: center;
-    color: #e7eef1;
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -473,7 +520,14 @@ footer {
   /*article*/
   #art {
     padding: 1.5rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
+  }
+  .solo-post {
+    padding: 2rem;
+  }
+
+  .pitch {
+    font-size: 1.1rem;
   }
 
   .grid-container {
@@ -504,6 +558,9 @@ footer {
   .me {
     gap: 0.5rem;
     justify-content: flex-start;
+  }
+  .my-presentation h2 {
+    font-size: 2.17rem;
   }
   .title-and-social-links {
     display: flex;

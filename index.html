@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <header>
-        <nav class="navbar">
+        <div class="navbar">
           <a class="logo-div" href="index.html">
             <img
               id="logoAhb"
@@ -33,19 +33,29 @@
               Anne-Hélène <span class="white-span">|</span> Portfolio
             </p>
           </a>
-          <i class="fa-solid fa-bars" id="hamburger"></i>
-          <ul class="nav-links">
-            <li>
-              <a href="index.html" class="active" aria-current="page">Home</a>
-            </li>
-            <li><a href="about-me.html">About me</a></li>
-          </ul>
-        </nav>
+          <button
+            aria-label="menu"
+            aria-expanded="false"
+            aria-controls="main-nav"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <nav id="main-nav" hidden>
+            <ul class="nav-links">
+              <li>
+                <a href="index.html" class="active" aria-current="page">Home</a>
+              </li>
+              <li><a href="about-me.html">About me</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
         <div class="hero">
           <h1>Anne-Hélène <span class="green-span">|</span> Portfolio</h1>
-          <p>
+          <p class="introduction">
             Hi, I'm Anne-Hélène, a front-end developer and web integrator based
             in Paris. <br />I've worked independently since 2017, building and
             customizing websites for clients, and I'm now focusing on React to
