@@ -12,10 +12,8 @@ const chefanneln = new URL("./images/chefai.png", import.meta.url).href;
 const tenzies = new URL("./images/tenzies.png", import.meta.url).href;
 const assemblygame = new URL("./images/assemblygame.png", import.meta.url).href;
 const quizzical = new URL("./images/quizzical.png", import.meta.url).href;
-const componentlibrary = new URL(
-  "./images/componentlibrary.png",
-  import.meta.url,
-).href;
+const componentlibrary = new URL("./images/compolibrary.png", import.meta.url)
+  .href;
 
 const postsArray = [
   {
