@@ -12,6 +12,10 @@ const chefanneln = new URL("./images/chefai.png", import.meta.url).href;
 const tenzies = new URL("./images/tenzies.png", import.meta.url).href;
 const assemblygame = new URL("./images/assemblygame.png", import.meta.url).href;
 const quizzical = new URL("./images/quizzical.png", import.meta.url).href;
+const componentlibrary = new URL(
+  "./images/componentLibrary.png",
+  import.meta.url,
+).href;
 
 const postsArray = [
   {
@@ -147,6 +151,17 @@ const postsArray = [
     description:
       "Quizzical — A React quiz app fetching questions from the Open Trivia Database API. Following a Scrimba brief and design, I coded the entire application myself, adding an extra feature beyond the requirements: a difficulty selector (easy/medium/hard). Features randomized questions and answers, instant green/red feedback, automatic scoring, a WhatsApp score share, and a confetti celebration on a winning score.",
     link: "https://quizzbyanneln.netlify.app/",
+  },
+  {
+    name: "Component Library",
+    image: componentlibrary,
+    subtitle:
+      "A React component library with badges, banners, cards and testimonials, built from a Figma design",
+    id: 13,
+    date: "October 28, 2026",
+    description:
+      "My component library is a collection of reusable UI components, built in React from a Figma design. It includes badges, banners, cards and testimonials, each shown in a gallery that displays all its variants. The most advanced techniques I used are compound components like Banner.Icon and Card.Title, and a clear split between logic and rendering, where conditions decide what content appears and CSS controls the layout. On the styling side, I built the testimonials on a 4-column CSS grid with explicit placement, and used absolute positioning and negative margins so the photos overflow their blocks. I also imported SVG icons as React components with Vite, and added accessibility features such as named regions, hidden decorative icons, and screen reader labels.",
+    link: "https://afewreactcomponents.netlify.app/",
   },
 ];
 export default postsArray;
