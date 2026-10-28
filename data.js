@@ -13,7 +13,7 @@ const tenzies = new URL("./images/tenzies.png", import.meta.url).href;
 const assemblygame = new URL("./images/assemblygame.png", import.meta.url).href;
 const quizzical = new URL("./images/quizzical.png", import.meta.url).href;
 const componentlibrary = new URL(
-  "./images/componentLibrary.png",
+  "./images/componentlibrary.png",
   import.meta.url,
 ).href;
 
