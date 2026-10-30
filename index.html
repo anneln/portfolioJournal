@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Portfolio Anne-Hélène</title>
@@ -16,21 +17,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" type="image-icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="container">
       <header>
         <div class="navbar">
           <a class="logo-div" href="index.html">
-            <img
-              id="logoAhb"
-              src="/images/logo.png"
-              alt="logo de Anne-Hélène"
-            />
+            <img id="logoAhb" src="/images/logo.png" alt="" />
             <p class="title-nav">
-              Anne-Hélène <span class="white-span">|</span> Portfolio
+              Anne-Hélène
+              <span class="white-span" aria-hidden="true">|</span> Portfolio
             </p>
           </a>
           <button
@@ -38,11 +37,11 @@
             aria-expanded="false"
             aria-controls="main-nav"
           >
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
           </button>
-          <nav id="main-nav" hidden>
+          <nav id="main-nav" aria-label="Main navigation" hidden>
             <ul class="nav-links">
               <li>
                 <a href="index.html" class="active" aria-current="page">Home</a>
@@ -52,9 +51,12 @@
           </nav>
         </div>
       </header>
-      <main>
+      <main id="main">
         <div class="hero">
-          <h1>Anne-Hélène <span class="green-span">|</span> Portfolio</h1>
+          <h1>
+            Anne-Hélène
+            <span class="green-span" aria-hidden="true">|</span> Portfolio
+          </h1>
           <p class="introduction">
             Hi, I'm Anne-Hélène, a front-end developer and web integrator based
             in Paris. <br />I've worked independently since 2017, building and
@@ -66,17 +68,18 @@
         </div>
         <div class="post-preview">
           <div class="grid-container">
-            <h4 class="recent-posts-list">Recent Projects</h4>
+            <h2 class="recent-posts-list">Recent Projects</h2>
             <section id="posts-list">
               <!--list of realisations-->
             </section>
           </div>
+          <p id="post-status" class="visually-hidden" role="status"></p>
           <div>
             <button class="btn" id="more-btn">View More</button>
             <!--grid here with view more button-->
           </div>
         </div>
-        <button id="btnTop" aria-label="Back to top">
+        <button id="btnTop" aria-label="Back to top" inert>
           <span class="icon-wrap">
             <i class="fa-regular fa-square" aria-hidden="true"></i>
             <i class="fa-solid fa-angle-up" aria-hidden="true"></i>
@@ -88,13 +91,15 @@
           <a
             href="https://github.com/anneln"
             target="_blank"
-            aria-label="Anne-Hélène's GitHub profile"
+            rel="noopener"
+            aria-label="Anne-Hélène's GitHub profile (opens in a new tab)"
           >
             <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/annehelenebricet/"
             target="_blank"
+            rel="noopener"
             aria-label="Anne-Hélène's LinkedIn profile"
           >
             <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i>

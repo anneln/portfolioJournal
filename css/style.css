@@ -10,7 +10,6 @@ body {
 
 h1,
 h2,
-h4,
 .post-date {
   color: #e7eef1;
 }
@@ -263,7 +262,7 @@ footer {
   letter-spacing: -1.08px;
 }
 
-.about h4 {
+.about h2 {
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -458,6 +457,30 @@ footer {
 
 #btnTop:hover {
   transform: translateY(-3px);
+}
+
+/* Text read by screen readers but invisible */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+/* Skip link: invisible until it gets the keyboard focus */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  color: #000;
+  transform: translateY(-100%);
+  z-index: 1000;
+}
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 /*media queries*/

@@ -1,7 +1,8 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>My Portfolio Journal</title>
+    <title>About me - Anne-Hélène Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,24 +35,29 @@
               alt="logo de Anne-Hélène"
             />
             <p class="title-nav">
-              Anne-Hélène <span class="white-span">|</span> Portfolio
+              Anne-Hélène
+              <span class="white-span" aria-hidden="true">|</span> Portfolio
             </p>
           </a>
           <button
-            aria-label="menu"
+            aria-label="Main menu"
             aria-expanded="false"
             aria-controls="main-nav"
           >
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
           </button>
-          <nav id="main-nav" hidden>
+          <nav id="main-nav" aria-label="Main navigation" hidden>
             <ul class="nav-links">
               <li>
-                <a href="index.html" aria-current="page">Home</a>
+                <a href="index.html">Home</a>
               </li>
-              <li><a href="about-me.html" class="active">About me</a></li>
+              <li>
+                <a href="about-me.html" class="active" aria-current="page"
+                  >About me</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -62,20 +68,21 @@
             <img
               id="ahb-img"
               src="images/ahb.jpeg"
-              alt="photo Anne-Hélène Bricet"
+              alt="Portrait of Anne-Hélène Bricet"
             />
             <div class="my-presentation">
               <div class="title-and-social-links">
-                <h2>
+                <h1>
                   Hi, I am Anne-Hélène,<span class="green-span"
                     ><br />
                     I'm a front-end developer!</span
                   >
-                </h2>
+                </h1>
                 <div class="icon-container">
                   <a
                     href="https://github.com/anneln"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Anne-Hélène's GitHub profile"
                   >
                     <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
@@ -83,6 +90,7 @@
                   <a
                     href="https://www.linkedin.com/in/annehelenebricet/"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Anne-Hélène's LinkedIn profile"
                   >
                     <i
@@ -102,7 +110,7 @@
             </div>
           </div>
           <div class="about">
-            <h4>How I got here ?</h4>
+            <h2>How I got here ?</h2>
             <p>
               I started my career in customer service and product management at
               Filofax, where I led after-sales and customer support and
@@ -123,7 +131,7 @@
               with teaching: I taught HTML/CSS in the Master's program Cultures
               et Métiers du web at Université Gustave Eiffel (2024–2025).
             </p>
-            <h4>How I keep growing</h4>
+            <h2>How I keep growing</h2>
             <p>
               I follow Scrimba's Frontend Developer Path to deepen my skills in
               modern JavaScript (ES6+), React, responsive design, accessibility
@@ -137,7 +145,7 @@
               improvements]) and I explain what I built, what challenged me and
               what I learned.
             </p>
-            <h4>What I bring to a team</h4>
+            <h2>What I bring to a team</h2>
             <ul>
               <li>
                 <strong>A user-first mindset: </strong>years in customer service
@@ -166,17 +174,18 @@
           </div>
         </section>
         <div class="grid-container">
-          <h4 class="recent-posts-list">Recent Projects</h4>
+          <h2 class="recent-posts-list">Recent Projects</h2>
           <section id="posts-list">
             <!--list of realisations-->
           </section>
         </div>
+        <p id="post-status" class="visually-hidden" role="status"></p>
         <div>
           <button class="btn" id="more-btn">View More</button>
           <!--put grid here with view more button-->
         </div>
       </main>
-      <button id="btnTop" aria-label="Back to top">
+      <button id="btnTop" aria-label="Back to top" inert>
         <span class="icon-wrap">
           <i class="fa-regular fa-square" aria-hidden="true"></i>
           <i class="fa-solid fa-angle-up" aria-hidden="true"></i>
