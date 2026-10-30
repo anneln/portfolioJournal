@@ -17,7 +17,7 @@ function displayArticles(start, end) {
               />
               <div class="post-description">
                 <span class="post-date">${article.date}</span>
-                <h1 class="post-title">${article.name}</h1>
+                <h3 class="post-title">${article.name}</h3>
                 <p class="post-paragraphe">
                   ${article.description.substring(0, 150)}...
                 </p>
@@ -83,4 +83,13 @@ window.addEventListener("scroll", () => {
 
 btnTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const burger = document.querySelector(".navbar > button");
+const menu = document.querySelector("#main-nav");
+burger.addEventListener("click", () => {
+  const isOpen = burger.getAttribute("aria-expanded") === "true";
+  burger.setAttribute("aria-expanded", String(!isOpen));
+  menu.toggleAttribute("hidden", isOpen);
+  menu.classList.toggle("visible", !isOpen);
 });
